@@ -20,13 +20,14 @@ env:
   APP_ENV: test
 
 defaults:
-  runs-on: ubuntu-20.04
   run:
     shell: bash
 
 jobs:
   build:
     name: Build
+
+    runs-on: ubuntu-20.04
 
     container:
       image: chargifi/php-xdebug:1.5.0
